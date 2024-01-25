@@ -1,0 +1,89 @@
+:root {
+  --main-color: #009ad8;
+}
+body {
+  overflow-x: hidden;
+}
+
+a {
+  color: white;
+}
+h1 {
+  font-size: 100px;
+}
+.photo {
+  width: 8%;
+}
+i {
+  color: var(--main-color);
+}
+#logo {
+  color: var(--main-color);
+  border: 2px solid transparent;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: black;
+  font-size: x-large;
+  margin-right: 10px;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: var(--main-color);
+  border: 2px solid var(--main-color);
+  padding: 10px;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 0%;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 0%;
+  text-transform: uppercase;
+}
+
+.navbar-nav .nav-link {
+  color: white;
+}
+.navbar-brand {
+  color: white;
+}
+
+.logic {
+  font-size: xx-small;
+}
+.navbar-toggler {
+  background-color: var(--main-color);
+}
+
+.all {
+  position: relative;
+  z-index: 9999999999;
+  width: 100%;
+}
+
+#background {
+  min-height: 460px;
+  background-image: url("../img/N7ETzFO.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.btn {
+  background-color: var(--main-color);
+}
+
+.sidebar {
+  width: 300px;
+  height: 200px;
+}
+.side {
+  width: 25%;
+  margin-left: 10px;
+  height: 35%;
+}
+.inner {
+  width: 80%;
+  background-color: black;
+}
+
+.setting {
+  width: 20%;
+  background-color: black;
+}

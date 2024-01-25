@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body onload="run()">
+    <div id="background" class="all">
+      <div class="">
+        <nav class="navbar navbar-expand-lg bg-dark top-nav">
+          <div class="container">
+            <img src="img/logo@2x.png" class="photo mb-3" />
+            <a class="navbar-brand fs-6 fw-bold" href="#">
+              <span class="fs-5">weather</span>
+              <p class="logic">tagline goes here</p></a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div
+              class="collapse navbar-collapse p-4"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bolder text-center">
+                <li class="nav-item px-2">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >home</a
+                  >
+                </li>
+                <li class="nav-item px-2">
+                  <a class="nav-link" href="#">news</a>
+                </li>
+
+                <li class="nav-item px-2">
+                  <a class="nav-link" href="#">live cameras</a>
+                </li>
+                <li class="nav-item px-2">
+                  <a class="nav-link" href="#">photo</a>
+                </li>
+                <li class="nav-item px-2">
+                  <a class="nav-link" href="#">contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div
+        class="mt-5 w-75 d-flex justify-content-center mx-auto bg-dark rounded-5"
+      >
+        <input
+          type="text"
+          class="w-100 bg-transparent border-0 form rounded-5 py-2 px-4"
+          placeholder="enter "
+          id="search"
+        />
+        <button class="btn  px-5 rounded-5" id="btninput">find</button>
+      </div>
+      <div class="items mt-5 container d-lg-flex accordion mx-auto pb-5">
+        <div class="item col-lg-4 bg-dark text-white opacity-75">
+          <div class="d-flex justify-content-between p-2 border-bottom">
+            <span id="day">cairo</span>
+            <div>
+              <span id="dateoutput">sunday</span>
+              <span id="dateinput">sunday</span>
+            </div>
+          </div>
+          <div class="p-3">
+            <p id="locationname">cairo</p>
+            <h1 id="locationtempc">18.c</h1>
+            <img src="img/logo@2x.png" id="firsticon" />
+            <br />
+            <p class="text-primary" id="firsttext"></p>
+            <br />
+            <div class="d-flex w-75 justify-content-around">
+              <i class="fa-solid fa-umbrella"></i>
+              <span id="humidity">20%</span>
+
+              <i class="fa-solid fa-wind"></i>
+              <span id="wind_kph">25%</span>
+              <i class="fa-solid fa-temperature-half"></i>
+              <span id="dirwind">525</span>
+            </div>
+          </div>
+        </div>
+        <div class="item col-lg-4 bg-black opacity-75">
+          <div class="border-bottom text-white text-center p-2 fw-bold">
+            <span id="nextday">cairo</span>
+          </div>
+
+          <div class="text-white text-center py-5 mt-5">
+            <img src="img/logo@2x.png" id="icon2" />
+
+            <p id="tempc2">18.4oC</p>
+            <p id="tempf2">11.4o</p>
+            <p class="text-primary" id="secondtext">saddaas</p>
+          </div>
+        </div>
+        <div class="item col-lg-4 bg-dark opacity-75">
+          <div class="border-bottom text-white text-center p-2 fw-bold">
+            <span id="nextday2">cairo</span>
+          </div>
+
+          <div class="text-white text-center py-5 mt-5">
+            <img src="img/logo@2x.png" id="icon3" />
+
+            <p id="tempc3">18.4oC</p>
+            <p id="tempf3">11.4o</p>
+            <p class="text-primary" id="threetext">saddaas</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-dark p-3 mt-5 pb-5">
+        <div class="container">
+          <div class="d-lg-flex mt-5 justify-content-between">
+            <div class="">
+              <div class="w-100 d-flex bg-black rounded-5">
+                <input
+                  type="text"
+                  class="w-100 bg-transparent border-0 form rounded-5 py-2 px-4"
+                  placeholder="enter "
+                />
+                <button class="btn  px-5 rounded-5">find</button>
+              </div>
+              <p class="text-white mt-3">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo,
+                aliquam.
+              </p>
+            </div>
+            <div>
+              <i class="fa-brands fa-facebook-f" id="logo"></i>
+              <i class="fa-brands fa-twitter" id="logo"> </i>
+              <i class="fa-brands fa-linkedin-in" id="logo"></i>
+              <i class="fa-brands fa-instagram" id="logo"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar position-fixed top-50 translate-middle-y d-flex">
+        <div class="inner">
+          <!-- <div class="row pt-3 container g-2 imgbox">
+            <img src="img/873a6290f4c69d146b46680e4888ab7e.jpg" class="w-25" />
+            <img src="img/pexels-photo-92633.jpeg" class="w-25" />
+            <img src="img/bgs.jpg" class="w-25" />
+            <img src="img/N7ETzFO.jpg" class="w-25" />
+          </div> -->
+          <div class="row pt-4 container g-1 h-100">
+            <div class="bg-info side"></div>
+            <div class="bg-warning side"></div>
+            <div class="bg-danger side"></div>
+            <div class="bg-light side"></div>
+            <div class="bg-success side"></div>
+            <div class="bg-primary side"></div>
+          </div>
+        </div>
+        <div class="setting fs-3 text-center py-2 align-self-baseline">
+          <i class="fa-solid fa-gear fa-spin"> </i>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/rainyday.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
